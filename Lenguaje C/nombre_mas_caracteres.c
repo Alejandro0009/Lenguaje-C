@@ -1,0 +1,40 @@
+/*problema 2*/
+#include<conio.h>
+#include<string.h>
+
+int main(){
+	char nombre1[31];
+	char nombre2[31];
+	char nombreLargo[31];
+	printf("ingrese primer nombre  ");
+	gets(nombre1);
+	printf("ingrese segundo nombre  ");
+	gets(nombre2);
+	
+	
+	if(strlen(nombre1)>strlen(nombre2)){
+	
+	strcpy(nombreLargo,nombre1);
+	printf("El nombre %s tiene mas caracteres  ",nombreLargo);
+	printf("\n");
+	printf("El nombre %s tiene menos caracteres  ",nombre2);
+	printf("\n");
+		
+	}else{
+		
+		strcpy(nombreLargo,nombre2);
+		printf("El nombre %s tiene mas caracteres  ",nombreLargo);
+		printf("\n");
+		printf("El nombre %s tiene menos caracteres  ",nombre1);
+		printf("\n");
+		
+	}
+	
+
+	
+	getch();
+	return 0;
+
+
+
+}
